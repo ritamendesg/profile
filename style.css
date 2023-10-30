@@ -1,0 +1,180 @@
+
+@media (max-width: 960px) {
+    /* For a screen < 960px, this CSS will be read */
+    .container,header,footer {
+      width: 700px;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    /* For a screen < 720px, this CSS will be read */
+    .container,header,footer {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    /* For a screen < 540px, this CSS will be read */
+    .container,header,footer {
+      width: 300px;
+    }
+  }
+
+body {
+    background-color:#242532;
+}
+
+/* Headings Styles */
+
+h1, h2 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:50px;
+    margin: -5px;
+}
+
+/* Headings Style for h3 */
+
+h3 {
+    color:white;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    margin: -10px;
+}
+
+/* Style for text */
+
+.text-center {
+    text-align: center;
+    color:white;
+    list-style: none;
+  }
+
+p { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Header links and style */
+
+.header {
+    background-color: #13141C;
+    width: 100%; /* Set the width */
+    margin: 50 auto; /* Set automatic margins on right/left */  
+    padding: 20px;  
+}
+/* Header links and style */
+
+li > p {
+    font-size: 16px;
+    display: inline;
+    padding: 30px;
+}
+
+li > p:hover {
+    color:#D489B1;
+}
+
+/* Buttons */
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    padding: 16px, 8px ;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+a:hover { 
+    color:#D489B1;
+    border: white;
+}
+
+/* Image size */
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    margin-bottom: 50px;
+    /* box-shadow: 5px 5xp 3px black; */
+}
+
+img:hover {
+    opacity:0.6;
+    border-color: aliceblue;
+}
+
+
+/* Section with h1 and my name */
+
+.container {
+    background-image: url("images/background-image-rita.png");
+    background-blend-mode: overlay;
+    background-color:#14151d8a;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align:center;
+}
+    
+
+/* My descripiton */
+
+.description {
+    margin-bottom: 20px;
+}
+
+/* Button Portfolio */
+
+.btn-pink-portfolio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 20px;
+    border-radius: 70px;
+    background-color:#D489B1;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.btn-pink-portfolio:hover {
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 20px;
+    /* border: 1px solid white; */
+    border-radius: 70px;
+    color:white;
+    background-color:#13141C;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #13141C;
+    margin: 50 auto;  
+    padding: 20px;  
+}
+
+
+/* Copywright style */
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Social Media icons /
+
+/* Style all font awesome icons */
+
+.list-inline {
+    display: inline;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
