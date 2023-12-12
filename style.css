@@ -1,227 +1,193 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap');
 
 @media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container,
-  header,
-  footer {
-    width: 700px;
-  }
+    /* For a screen < 960px, this CSS will be read */
+    .container,header,footer {
+        width: 700px;
+    }
 }
 
 @media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container,
-  header,
-  footer {
-    width: 500px;
-  }
+    /* For a screen < 720px, this CSS will be read */
+    .container,header,footer {
+        width: 500px;
+    }
 }
 
 @media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container,
-  header,
-  footer {
-    width: 300px;
-  }
+    /* For a screen < 540px, this CSS will be read */
+    .container,header,footer {
+        width: 300px;
+    }
 }
- 
-  .wave {
-    display: block;
-    position: relative;
-    height: 40px;
-    width: 100%;
-    background: rgb(57, 27, 112);
-    transform: scale(1, 1);
-  }
-  
-  .wave:before {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 100%;
-    height: 300px;
-    background-color: white;
-    right: -25%;
-    top: 20px;
-  }
-  
-  .wave:after {
-    content: "";
-    display: block;
-    position: absolute;
-    border-radius: 100%;
-    width: 100%;
-    height: 300px;
-    background-color: rgb(57, 27, 112);
-    left: -25%;
-    top: -240px;
-    clip-path: ellipse(100% 15% at -15% 100%);
-  }
 
 body {
-  background-color: #242532;
-  /* overflow: hidden; */
-  margin: 0;
-  padding: 0;
+    background-color:#242532;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
 }
 
 /* Headings Styles */
 
 h1 {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  margin: -5px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:40px;
+    margin: -5px;
 }
 
 h2 {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 30px;
-  margin: -5px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
+    margin: -5px;
 }
 
 /* Headings Style for h3 */
 
 h3 {
-  color: white;
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-size: 30px;
-  margin: -10px;
+    color:white;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    margin: -10px;
 }
 
 /* Style for text */
 
 .text-center {
-  text-align: center;
-  color: white;
-  list-style: none;
+    text-align: center;
+    color:white;
+    list-style: none;
+    
 }
 
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+p { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* Header style */
 
 .header {
-  background-color: #13141c;
-  padding: 30px;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #13141C;
+    padding: 30px;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);  
 }
 
 /* Header links and style */
 
 li > p {
-  font-size: 16px;
-  display: inline;
-  padding: 30px;
+    font-size: 16px;
+    display: inline;
+    padding: 30px;
 }
 
 li > p:hover {
-  color: #d489b1;
+    color:#D489B1;
 }
 
 /* Buttons */
 
 a {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  padding: 16px, 8px;
-  color: white;
-  text-decoration: none;
-  transition-duration: 0.4s;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 16px, 8px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.4s;
 }
 
-a:hover {
-  color: #d489b1;
-  border: white;
+a:hover { 
+    color:#D489B1;
+    border: white;
 }
+
 
 /* Image size */
 
 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+
 }
 
 img:hover {
-  opacity: 0.6;
-  border-color: aliceblue;
-  transition: 0.3s ease-in-out;
+    opacity:0.6;
+    border-color: aliceblue;
+    transition: .3s ease-in-out; 
 }
+
 
 /* Section with h1 and my name */
 
 .container {
-  background-image: url("images/background-image-lets-work-together.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50%;
-  background-blend-mode: overlay;
-  background-color: #14151da7;
-  padding-top: 150px;
-  padding-bottom: 150px;
+    background-image: url("images/background-image-lets-work-together.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+    background-blend-mode: overlay;
+    background-color:#14151da7;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .container-about-me {
-  background-color: #171721;
-  max-width: 1000px; /* Set the width */
-  margin: 0 auto; /* Set automatic margins on right/left */
-  padding: 80px;
+    background-color: #171721;
+    max-width: 1000px;        /* Set the width */
+    margin: 0 auto;      /* Set automatic margins on right/left */
+    padding: 80px;
 }
 
 .container-about-me:hover {
-  background-color: #12121a;
+    background-color: #12121a;
 }
 
 /* My descripiton */
 
 .description {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 /* Button Portfolio */
 
+
 .btn-pink-portfolio {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  padding: 20px 25px;
-  border-radius: 70px;
-  background-color: #d489b1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding: 20px 25px;
+    border-radius: 70px;
+    background-color:#D489B1;
 }
 
 .btn-pink-portfolio:hover {
-  color: white;
-  background-color: #13141c;
+    color:white;
+    background-color:#13141C;
 }
 
 /* Footer */
 
 .footer {
-  background-color: #13141c;
-  margin: 50 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+    background-color: #13141C;
+    margin: 50 auto;  
+    padding-top: 50px; 
+    padding-bottom: 50px; 
 }
 
 /* Copywright style */
 
-.copyright {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+.copyright { 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /* Social Media icons /
@@ -229,31 +195,32 @@ img:hover {
 /* Style all font awesome icons */
 
 .list-inline {
-  display: inline;
-  padding: 10px;
-  width: 80px;
-  height: 80px;
+    display: inline;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
 }
 
 .fa-dribbble {
-  color: white;
-  font-size: 30px;
-  padding-left: 0px;
+    color: white;
+    font-size:30px;
+    padding-left: 0px;
 }
 
 .fa-dribbble:hover {
-  color: #d489b1;
-}
+    color:#D489B1;
+} 
 
 .fa-linkedin-in {
-  color: white;
-  font-size: 30px;
-  padding-left: 0px;
+    color: white;
+    font-size:30px;
+    padding-left: 0px;
 }
 
 .fa-linkedin-in:hover {
-  color: #d489b1;
+    color:#D489B1;
 }
+
 
 /* animations
 
@@ -291,12 +258,12 @@ img:hover {
     font-size: 16px;
     padding: 10px;
   } */
-
-/* .marquee span {
+  
+  /* .marquee span {
     display: inline-block;
     animation: marquee 50s linear infinite;
   } */
-
+ 
 /*   
   @keyframes marquee {
     0% {
