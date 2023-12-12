@@ -1,35 +1,47 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap');
+
 @media (max-width: 960px) {
     /* For a screen < 960px, this CSS will be read */
     .container,header,footer {
-      width: 700px;
+        width: 700px;
     }
-  }
-  
-  @media (max-width: 720px) {
+}
+
+@media (max-width: 720px) {
     /* For a screen < 720px, this CSS will be read */
     .container,header,footer {
-      width: 500px;
+        width: 500px;
     }
-  }
-  
-  @media (max-width: 540px) {
+}
+
+@media (max-width: 540px) {
     /* For a screen < 540px, this CSS will be read */
     .container,header,footer {
-      width: 300px;
+        width: 300px;
     }
-  }
+}
 
 body {
     background-color:#242532;
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
 }
 
 /* Headings Styles */
 
-h1, h2 {
+h1 {
     color:white;
     font-family: 'Poppins', sans-serif;
-    font-size:50px;
+    font-size:40px;
+    margin: -5px;
+}
+
+h2 {
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size:30px;
     margin: -5px;
 }
 
@@ -39,7 +51,7 @@ h3 {
     color:white;
     font-family: 'Permanent Marker', cursive;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 30px;
     margin: -10px;
 }
 
@@ -49,7 +61,8 @@ h3 {
     text-align: center;
     color:white;
     list-style: none;
-  }
+    
+}
 
 p { 
     font-family: 'Poppins', sans-serif;
@@ -57,14 +70,17 @@ p {
     font-size: 16px;
 }
 
-/* Header links and style */
+/* Header style */
 
 .header {
     background-color: #13141C;
-    width: 100%; /* Set the width */
-    margin: 50 auto; /* Set automatic margins on right/left */  
-    padding: 20px;  
+    padding: 30px;
+    position:fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);  
 }
+
 /* Header links and style */
 
 li > p {
@@ -81,8 +97,8 @@ li > p:hover {
 
 a {
     font-family: 'Poppins', sans-serif;
-    font-size:14px;
-    padding: 16px, 8px ;
+    font-size: 14px;
+    padding: 16px, 8px;
     color: white;
     text-decoration: none;
     transition-duration: 0.4s;
@@ -93,34 +109,47 @@ a:hover {
     border: white;
 }
 
+
 /* Image size */
 
 img {
     width: 200px;
     height: 200px;
-    border-radius: 500px;
-    margin-bottom: 50px;
-    /* box-shadow: 5px 5xp 3px black; */
+    border-radius: 100px;
+
 }
 
 img:hover {
     opacity:0.6;
     border-color: aliceblue;
+    transition: .3s ease-in-out; 
 }
 
 
 /* Section with h1 and my name */
 
 .container {
-    background-image: url("images/background-image-rita.png");
+    background-image: url("images/background-image-lets-work-together.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
     background-blend-mode: overlay;
-    background-color:#14151d8a;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    text-align:center;
+    background-color:#14151da7;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
-    
+
+.container-about-me {
+    background-color: #171721;
+    max-width: 1000px;        /* Set the width */
+    margin: 0 auto;      /* Set automatic margins on right/left */
+    padding: 80px;
+}
+
+.container-about-me:hover {
+    background-color: #12121a;
+}
 
 /* My descripiton */
 
@@ -130,26 +159,18 @@ img:hover {
 
 /* Button Portfolio */
 
+
 .btn-pink-portfolio {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    padding: 20px 20px;
+    padding: 20px 25px;
     border-radius: 70px;
     background-color:#D489B1;
-    margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 .btn-pink-portfolio:hover {
-    font-family:'Poppins', sans-serif;
-    font-weight: 400;
-    padding: 20px 20px;
-    /* border: 1px solid white; */
-    border-radius: 70px;
     color:white;
     background-color:#13141C;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 /* Footer */
@@ -157,15 +178,16 @@ img:hover {
 .footer {
     background-color: #13141C;
     margin: 50 auto;  
-    padding: 20px;  
+    padding-top: 50px; 
+    padding-bottom: 50px; 
 }
-
 
 /* Copywright style */
 
-.copyright {
+.copyright { 
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 14px;
 }
 
 /* Social Media icons /
@@ -175,6 +197,79 @@ img:hover {
 .list-inline {
     display: inline;
     padding: 10px;
-    width: 50px;
-    height: 50px;
-  }
+    width: 80px;
+    height: 80px;
+}
+
+.fa-dribbble {
+    color: white;
+    font-size:30px;
+    padding-left: 0px;
+}
+
+.fa-dribbble:hover {
+    color:#D489B1;
+} 
+
+.fa-linkedin-in {
+    color: white;
+    font-size:30px;
+    padding-left: 0px;
+}
+
+.fa-linkedin-in:hover {
+    color:#D489B1;
+}
+
+
+/* animations
+
+@keyframes growAndChangeColor {
+    0% {
+        transform: scale(1);
+        background-color: white;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: pink;
+    }
+    100% {
+        transform: scale(2);
+        background-color: black;
+    }
+}
+
+.element-to-animate {
+    animation: growAndChangeColor 4s ease-in-out infinite;
+} */
+
+/* .scrolling-text {
+    background-color: black;
+} */
+
+/* .marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    color:white;
+    background-color: rgb(9, 13, 27);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+  } */
+  
+  /* .marquee span {
+    display: inline-block;
+    animation: marquee 50s linear infinite;
+  } */
+ 
+/*   
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(100%, 0);
+    }
+  } */
