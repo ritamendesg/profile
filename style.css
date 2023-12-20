@@ -276,6 +276,7 @@ summary:focus {
 
 summary:hover .expand-icon {
   opacity: 1;
+  size: 10px;
 }
 
 .faq-title {
