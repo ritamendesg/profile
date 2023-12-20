@@ -1,30 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap');
 
 @media (max-width: 960px) {
-    /* For a screen < 960px, this CSS will be read */
     .container,header,footer {
         width: 700px;
     }
 }
 
 @media (max-width: 720px) {
-    /* For a screen < 720px, this CSS will be read */
     .container,header,footer {
         width: 500px;
     }
 }
 
 @media (max-width: 540px) {
-    /* For a screen < 540px, this CSS will be read */
     .container,header,footer {
         width: 300px;
     }
-}
+} 
 
 body {
     background-color:#242532;
-    /* overflow: hidden; */
     margin: 0;
     padding: 0;
 }
@@ -53,7 +48,7 @@ h3 {
     font-weight: 400;
     font-size: 30px;
     margin: -10px;
-}
+} 
 
 /* Style for text */
 
@@ -68,7 +63,7 @@ p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
-}
+} 
 
 /* Header style */
 
@@ -79,7 +74,7 @@ p {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 10px 30px rgba(0,0,0,.1);  
-}
+} 
 
 /* Header links and style */
 
@@ -91,7 +86,7 @@ li > p {
 
 li > p:hover {
     color:#D489B1;
-}
+} 
 
 /* Buttons */
 
@@ -107,7 +102,7 @@ a {
 a:hover { 
     color:#D489B1;
     border: white;
-}
+} 
 
 
 /* Image size */
@@ -142,8 +137,8 @@ img:hover {
 
 .container-about-me {
     background-color: #171721;
-    max-width: 1000px;        /* Set the width */
-    margin: 0 auto;      /* Set automatic margins on right/left */
+    max-width: 1000px;       
+    margin: 0 auto;      
     padding: 80px;
 }
 
@@ -155,7 +150,7 @@ img:hover {
 
 .description {
     margin-bottom: 20px;
-}
+} 
 
 /* Button Portfolio */
 
@@ -203,7 +198,7 @@ img:hover {
 
 .fa-dribbble {
     color: white;
-    font-size:30px;
+    font-size:20px;
     padding-left: 0px;
 }
 
@@ -213,7 +208,7 @@ img:hover {
 
 .fa-linkedin-in {
     color: white;
-    font-size:30px;
+    font-size:20px;
     padding-left: 0px;
 }
 
@@ -222,54 +217,89 @@ img:hover {
 }
 
 
-/* animations
+.portfolio-container {
+    display: flex;
 
-@keyframes growAndChangeColor {
-    0% {
-        transform: scale(1);
-        background-color: white;
-    }
-    50% {
-        transform: scale(1.5);
-        background-color: pink;
-    }
-    100% {
-        transform: scale(2);
-        background-color: black;
-    }
 }
 
-.element-to-animate {
-    animation: growAndChangeColor 4s ease-in-out infinite;
-} */
 
-/* .scrolling-text {
-    background-color: black;
-} */
 
-/* .marquee {
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    color:white;
-    background-color: rgb(9, 13, 27);
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 10px;
-  } */
-  
-  /* .marquee span {
-    display: inline-block;
-    animation: marquee 50s linear infinite;
-  } */
- 
-/*   
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(100%, 0);
-    }
-  } */
+* {
+  box-sizing: border-box;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 12em;
+}
+
+details {
+	font-size: 1rem;
+	margin: 0 auto;
+	width: 100%;
+	background: #F6FAFF;
+	border-radius: 8px;
+	position: relative;
+	max-width: 600px;
+  border: 1px solid #C3DEFF;
+  transition: all 0.3s ease-in-out;
+}
+
+details:hover {
+  border: 1px solid #A4A1FF;
+}
+
+
+summary {
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  padding: 1em;
+  align-items: center;
+}
+
+summary:hover .faq-title {
+  opacity: 1;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:hover .expand-icon {
+  opacity: 1;
+  size: 10px;
+}
+
+.faq-title {
+  color: #1C2035;
+  width: 90%;
+  opacity: 0.65;
+  transition: all 250ms ease-in-out;
+}
+
+.faq-content {
+  color: #303651;
+  padding: 0.2em 1em 1em 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.expand-icon {
+  opacity: 0.65;
+}
+
+.expand-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 1em;
+  transition: all 150ms ease-out;
+}
