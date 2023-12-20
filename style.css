@@ -232,7 +232,7 @@ img:hover {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 12em;
+  margin: 12em 0em 12em 0em;
 }
 
 details {
@@ -295,6 +295,7 @@ summary:hover .expand-icon {
 
 .expand-icon {
   opacity: 0.65;
+  width: 40px;
 }
 
 .expand-icon {
