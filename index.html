@@ -16,6 +16,11 @@
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
       />
+
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     </head>
     <body>
       <div class="header text-center">
@@ -29,120 +34,9 @@
       <div class="container">
         <div class="container-about-me text-center">
           <img src="/images/rita-goncalves-profile-image.jpg" alt="" />
-          <h1>Hi, my name is <span style="color: #d489b1">Rita</span></h1>
-          <h2>I'm a Frontend developer.😎</h2>
-          <p class="description text-center">I have designed 100+ beautiful and user-friendlydigital experiences in the last 4 years.</p>
-            <a href="second_page.html" class="bn5">About me</a>
+          <h1 class="animate__animated animate__fadeInDown">Welcome</h1>
+            <!-- <a href="second_page.html" class="">About me</a> -->
         </div>
-      </div>
-
-
-
-      <div class="container">
-        <article class="card">
-            <div class='background'>
-                <img src="assets/preview.png" alt="Blog Preview Image">
-            </div>
-            <div class='content'>
-                <div class="card-header">
-                    <div class="card-type">
-                        Web Dev
-                    </div>
-                    <div class="latest-article">
-                        Latest Article
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2>Using Fetch API For Executing GraphQL Queries And Mutations</h2>
-                    <p>
-                        GraphQL is a powerful tool for querying data from remote servers and my preferred way of
-                        building APIs (Application
-                        Programming Interface). For some people, it might be difficult to learn as the tutorials are
-                        usually written using tools
-                        such as Apollo or Relay. These tools are great but often suited for more complicated projects.
-                        In certain scenarios,
-                        there might be better to choose a more lightweight approach and not increase bundle size with
-                        additional libraries. In
-                        these cases, you can work directly with the tools available in the browser. In this quick
-                        tutorial, we will use fetch,
-                        commonly available in your browser. Let’s first quickly revise what fetch is and how it is
-                        usually used with REST API,
-                        then we can move to simple GraphQL queries execution.
-                    </p>
-                </div>
-                <div class="blog-preview__bottom">
-                    <div class="blog-author">
-                        <img src="assets/profile_small.png" alt="Avatar">
-                        <div class="blog-author__name">
-                            <div class="blog-author__name">
-                                David Mráz
-                            </div>
-                            <a rel="author" href="mailto:david@atheros.ai" class="blog-author__alias">
-                                ritamendesg
-                            </a>
-                        </div>
-                    </div>
-                    <a class="go-to-article-button" href="/my-blog" title="New Blog">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M5 12l14 0" />
-                            <path d="M15 16l4 -4" />
-                            <path d="M15 8l4 4" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </article>
-    </div>
-
-
-
-      <div class="faq-container">
-        <details>
-          <summary>
-            <span class="faq-title">
-              How I am?
-            </span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">
-            The video content takes more than 4.5 hours. ...
-          </div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">
-              Who teaches courses on Atheros Learning?
-            </span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">
-            The authors of the courses are mostly ...
-          </div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">How is the course different from other UX/UI design courses?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">The key aspect is that this course provides a clear overview of the whole design process and principles, that represent necessary information for being successful within the industry. You will also get direct support from the author of this course, who is ready to answer all your questions and care about your next steps. Last but not least is the fact, that it's not only about video content, but you will also get access to the unique database of design resources and special offers from the partners of the course.</div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">Do I get a certificate after completing a course?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">Yes, after successfully finishing the quizzes within the course, you can download a certificate, proving all gained knowledge and skills.</div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">Are there any hidden fees within the course?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content"> Absolutely not! You will gain all benefits and features with the one-time payment, unlocking the course.</div>
-        </details>
       </div>
 
       <div class="footer text-center element-to-animate">
@@ -171,10 +65,6 @@
         </ul>
         <p class="copyright text-center">Copyright© 2023 Rita Mendes Goncalves</p>
       </div>
-
-        <!-- <div class="ball"></div> -->
-
       <script src="script.js"></script>
-      <script async src="cursor/cursor.js"></script>
     </body>
 </html>
