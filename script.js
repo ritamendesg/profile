@@ -70,6 +70,8 @@ window.addEventListener("load", function() {
 })
 
 // ======== Dark Theme =========
+
+
 //get the theme button , and define class names for dark theme and sun icon
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";

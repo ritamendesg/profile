@@ -280,6 +280,19 @@ section {
 
 /* Skills Section */
 
+#skills {
+  position: relative;
+
+}
+.skill-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-text {
+    margin-bottom: 8rem;
+    font-size: 2.5rem;
+}
 
 /* Projects Section  */
 
