@@ -4,177 +4,132 @@
         <meta charset="UTF-8">
         <title>Rita Goncalves - Portfolio </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-            type='text/css'
-        >
+         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
-      />
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- ------ RemixIcon ------- -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- ------ BoxIcon ------- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
-      <div class="header text-center">
-        <li class="text-center">
-          <p>About me</p>
-          <p>Projects</p>
-          <p>Contact</p>
-        </li>
-      </div>
-  
-      <div class="container">
-        <div class="container-about-me text-center">
-          <img src="/images/rita-goncalves-profile-image.jpg" alt="" />
-          <h1>Hi, my name is <span style="color: #d489b1">Rita</span></h1>
-          <h2>I'm a Frontend developer.😎</h2>
-          <p class="description text-center">I have designed 100+ beautiful and user-friendlydigital experiences in the last 4 years.</p>
-            <a href="second_page.html" class="bn5">About me</a>
+
+
+      <!-- ---------------- Header --------------- -->
+
+      <header class="header">
+        <a href="#" class="logo">RitaGoncalves<span></span></a>
+
+        <div class="nav-container">
+            <ul class="navbar">
+                <li class="nav-link active-link"><a href="#profile">Home</a></li>
+                <li class="nav-link"><a href="#about">About Me</a></li>
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+            </ul>
+            
+            <div class="nav-button">
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <a href="#"><i class="bx bx-menu" id="menu-icon"></i></a>
+            </div>
         </div>
-      </div>
+        <div class="underline"></div>
+
+    </header>
 
 
+      <!-- ---------------- Profile Section --------------- -->
 
-      <div class="container">
-        <article class="card">
-            <div class='background'>
-                <img src="assets/preview.png" alt="Blog Preview Image">
+      <section id="profile">
+        <div class="section-avatar">
+            <img src="Assets/images/rita-goncalves-profile-image.jpg" class="profile-pic">
+        </div>
+
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Rita Goncalves</h1>
+            <p class="section-text-p2">Front-End Developer</p>
+            <p class="section-text-p3">With knowledge in web development and design,</br>I offer the best projects resulting in quality work.
+               </br> 
+              🦄Design Expertise </br> 
+              🚀Aspiration for Growth </br>
+              💻Tech Enthusiast </br>
+              🤝Collaborative Spirit</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('/Assets/images/Rita Mendes Goncalves - Junior Frontend developer.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
             </div>
-            <div class='content'>
-                <div class="card-header">
-                    <div class="card-type">
-                        Web Dev
-                    </div>
-                    <div class="latest-article">
-                        Latest Article
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2>Using Fetch API For Executing GraphQL Queries And Mutations</h2>
-                    <p>
-                        GraphQL is a powerful tool for querying data from remote servers and my preferred way of
-                        building APIs (Application
-                        Programming Interface). For some people, it might be difficult to learn as the tutorials are
-                        usually written using tools
-                        such as Apollo or Relay. These tools are great but often suited for more complicated projects.
-                        In certain scenarios,
-                        there might be better to choose a more lightweight approach and not increase bundle size with
-                        additional libraries. In
-                        these cases, you can work directly with the tools available in the browser. In this quick
-                        tutorial, we will use fetch,
-                        commonly available in your browser. Let’s first quickly revise what fetch is and how it is
-                        usually used with REST API,
-                        then we can move to simple GraphQL queries execution.
-                    </p>
-                </div>
-                <div class="blog-preview__bottom">
-                    <div class="blog-author">
-                        <img src="assets/profile_small.png" alt="Avatar">
-                        <div class="blog-author__name">
-                            <div class="blog-author__name">
-                                David Mráz
-                            </div>
-                            <a rel="author" href="mailto:david@atheros.ai" class="blog-author__alias">
-                                ritamendesg
-                            </a>
-                        </div>
-                    </div>
-                    <a class="go-to-article-button" href="/my-blog" title="New Blog">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-                            fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M5 12l14 0" />
-                            <path d="M15 16l4 -4" />
-                            <path d="M15 8l4 4" />
-                        </svg>
-                    </a>
-                </div>
+
+            <div id="socials-container">
+                <a href="https://github.com/ritamendesg" target="_blank"><i class="ri-github-line social-icon"></i></a>
+                <a href="https://www.instagram.com/ritamendesg/" target="_blank"><i class="ri-instagram-line social-icon"></i></a>
+                <a href="https://dribbble.com/ritamendesg" target="_blank"><i class="ri-dribbble-fill social-icon"></i></a>
             </div>
-        </article>
-    </div>
+
+        </div>
+    </section>
+
+          <!-- ---------------- About Section --------------- -->
+          <section id="about">
+          </section>
+          <!-- ---------------- Skills Section --------------- -->
+          <section class="skills" id="skills">
+
+            <p class="section-text-p1">My favourite Skills</p>
+            <h2 class="title skill-text">My Skills</h2>
+            <div class="skill-content">
+              <div class="row">
+                <div class="row-image">
+                  <img src="Assets/images/HTML.png" alt="Skill 1">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row-image">
+                  <img src="Assets/images/CSS.png" alt="Skill 2">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="row-image">
+                  <img src="Assets/images/javascript.png" alt="Skill 3">
+                </div>
+              </div>
 
 
+              <div class="row">
+                <div class="row-image">
+                  <img src="Assets/images/React.png" alt="Skill 4">
+                </div>
+              </div>
 
-      <div class="faq-container">
-        <details>
-          <summary>
-            <span class="faq-title">
-              How I am?
-            </span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">
-            The video content takes more than 4.5 hours. ...
-          </div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">
-              Who teaches courses on Atheros Learning?
-            </span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">
-            The authors of the courses are mostly ...
-          </div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">How is the course different from other UX/UI design courses?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">The key aspect is that this course provides a clear overview of the whole design process and principles, that represent necessary information for being successful within the industry. You will also get direct support from the author of this course, who is ready to answer all your questions and care about your next steps. Last but not least is the fact, that it's not only about video content, but you will also get access to the unique database of design resources and special offers from the partners of the course.</div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">Do I get a certificate after completing a course?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content">Yes, after successfully finishing the quizzes within the course, you can download a certificate, proving all gained knowledge and skills.</div>
-        </details>
-        <details>
-          <summary>
-            <span class="faq-title">Are there any hidden fees within the course?</span>
-            <img src="images/plus.svg" class="expand-icon" alt="Plus">
-          </summary>        
-          <div class="faq-content"> Absolutely not! You will gain all benefits and features with the one-time payment, unlocking the course.</div>
-        </details>
-      </div>
 
-      <div class="footer text-center element-to-animate">
-        <ul>
-          <li class="list-inline text-center">
-            <a
-              href="https://www.linkedin.com/in/rita-mendes-goncalves/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-  
-          <li class="list-inline text-center">
-            <a href="https://dribbble.com/ritamendesg" target="_blank">
-              <i class="fab fa-dribbble"></i
-            ></a>
-          </li>
+              <div class="row">
+                <div class="row-image">
+                  <img src="Assets/images/Tailwindcss.png" alt="Skill 4">
+                </div>
+              </div>
 
-          <li class="list-inline text-center">
-            <a href="https://dribbble.com/ritamendesg" target="_blank">
-              <i class="fab fa-github"></i
-            ></a>
-          </li>
+            </div>
+          </section>
+          <!-- ---------------- Project Section --------------- -->
+          <section id="projects">
+          </section>
+          <!-- ---------------- Contact Section --------------- -->
+          <section id="contact">
+          </section>
+          <!-- ---------------- CopyRight --------------- -->
+          <p class="copyright">&#169; Rita Goncalves. All right reserved</p>
+          <!-- ---------------- Scroll Up --------------- -->
 
-        </ul>
-        <p class="copyright text-center">Copyright© 2023 Rita Mendes Goncalves</p>
-      </div>
-
-        <!-- <div class="ball"></div> -->
-
-      <script src="script.js"></script>
-      <script async src="cursor/cursor.js"></script>
-    </body>
+          <!-- ------ CDN FontAwesome ------- -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+          <!-- ------ JavaScript ------- -->
+          <script src="script.js"></script>
+      </body>
 </html>
