@@ -1,236 +1,321 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap');
+/*============= Google Fonts ============*/
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;700&display=swap');
 
+/* ============= Base Style ============ */
 
-@media (max-width: 960px) {
-    .container,header,footer {
-        width: 700px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+  font-family: 'Overpass Mono', monospace;
 }
-
-@media (max-width: 720px) {
-    .container,header,footer {
-        width: 500px;
-    }
-}
-
-@media (max-width: 540px) {
-    .container,header,footer {
-        width: 300px;
-    }
-} 
 
 :root {
-    --background: #242532;
-    --primary: white;
-    --font-family:'Poppins', sans-serif;
-    --secondary: #D489B1;
+  --body-color: #f4f4f4;
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --secondary-2-color: #D489B1;
+  --p-color: #555;
+  --input-color: #fbfbfb;
+  --input-hover-color: #f0efef;
+  --shadow-color: rgba(0, 0, 0, 0.8);
+  --border-color: #353535;
+  --font-size-body:15px;
+}
+
+/* ========== Dark Theme ======== */
+body.dark-theme {
+  --body-color: #000;
+  --primary-color: #d1d1d1;
+  --secondary-color: #181818;
+  --secondary-2-color: #D489B1;
+  --p-color: #969595;
+  --input-color: #202020;
+  --input-hover-color: #393939;
+  --shadow-color: rgba(255, 255, 255, 0.5);
+  --border-color: #cdcdcd;
+}
+
+.change-theme {
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 body {
-    background-color:var(--background);
+  background: var(--body-color);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-/* Headings Styles */
-
-h1 {
-    color:var(--primary);
-    font-family: var(--font-family);
-    font-size:40px;
-    margin: -5px;
-}
-
-h2 {
-    color:white;
-    font-family: var(--font-family);
-    font-size:30px;
-    margin: -5px;
-}
-
-/* Headings Style for h3 */
-
-h3 {
-    color:var(--primary);
-    font-family: 'Permanent Marker', cursive;
-    font-weight: 400;
-    font-size: 30px;
-    margin: -10px;
-} 
-
-/* Style for text */
-
-.text-center {
-    text-align: center;
-    color:var(--primary);
-    list-style: none;
-    
-}
-
-p { 
-    font-family: 'Overpass Mono', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-} 
-
-/* Header style */
-
-.header {
-    background-color: #13141C;
-    padding: 30px;
-    position:fixed;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 10px 30px rgba(0,0,0,.2);  
-} 
-
-/* Header links and style */
-
-li > p {
-    font-size: 16px;
-    display: inline;
-    padding: 30px;
-}
-
-li > p:hover {
-    color: var(--secondary);
-} 
-
-/* Buttons */
-
-a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    padding: 16px, 8px;
-    color: var(--primary);
-    text-decoration: none;
-    transition-duration: 0.4s;
-}
-
-a:hover { 
-    color:#D489B1;
-    border: white;
-} 
-
-
-/* Image size */
-
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-
-}
-
-img:hover {
-    opacity:0.6;
-    border-color: aliceblue;
-    transition: .3s ease-in-out; 
+p {
+  color: var(--p-color);
 }
 
 
-/* Section with h1 and my name */
+/* ============= Header ============ */
 
-.container {
-    background-image: url("images/background-image-lets-work-together.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50%;
-    background-blend-mode: overlay;
-    background-color:#14151da7;
-    padding-top: 150px;
-    padding-bottom: 150px;
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 9px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
 }
 
-.container-about-me {
-    background-color: #171721;
-    max-width: 1000px;       
-    margin: 0 auto;      
-    padding: 80px;
+/*  --- logo --- */
+
+.logo {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
-.container-about-me:hover {
-    background-color: #12121a;
+.logo span {
+  color: var(--p-color);
 }
 
-/* My descripiton */
+/*  --- Navbar --- */
 
-.description {
-    margin-bottom: 20px;
-} 
-
-/* Button Portfolio */
-
-
-.btn-pink-portfolio {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    padding: 20px 25px;
-    border-radius: 70px;
-    background-color:#D489B1;
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.btn-pink-portfolio:hover {
-    color:white;
-    background-color:#13141C;
+.nav-container ul li {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 2rem;
 }
 
-/* Footer */
-
-.footer {
-    background-color: #13141C;
-    margin: 50 auto;  
-    padding-top: 50px; 
-    padding-bottom: 50px; 
+.nav-container ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+  font-size: var(--font-size-body);
 }
 
-/* Copywright style */
-
-.copyright { 
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+.nav-container ul li a:hover {
+  color: var(--p-color);
 }
 
-/* Social Media icons /
-
-/* Style all font awesome icons */
-
-.list-inline {
-    display: inline;
-    padding: 10px;
-    width: 80px;
-    height: 80px;
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.fa-dribbble {
-    color: white;
-    font-size:20px;
-    padding-left: 0px;
+/*  UnderLine */
+
+.underline {
+  position: fixed;
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: width 0.2s, background-color 0.5s, transform 0.5s;
+  z-index: 1;
+  left: 0;
+  display: none;
 }
 
-.fa-dribbble:hover {
-    color:#D489B1;
-} 
-
-.fa-linkedin-in {
-    color: white;
-    font-size:20px;
-    padding-left: 0px;
+#menu-icon {
+  color: var(--primary-color);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
 }
 
-.fa-linkedin-in:hover {
-    color:#D489B1;
+/* Sticky Header */
+
+header.sticky {
+  padding: 9px 6%;
+  background: transparent;
+  backdrop-filter: blur(55px);
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+/* ========= Section ========= */
+
+section {
+  padding-top: 15vh;
+  margin: 0 10rem;
+  min-height: fit-content;
+}
+
+/* ========= Profile Section ========= */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 90vh;
+}
+
+/* ---- Pic-Profile ---- */
+
+.section-avatar {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 0 7px var(--shadow-color);
+}
+
+/* ---- Text Section ---- */
+
+.section-text {
+  align-self: center;
+  text-align: center;
+}
+
+.section-text p {
+  font-weight: 600;
+}
+
+.section-text-p1 {
+  text-align: center;
+  color: var(--p-color);
+}
+
+.section-text-p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.section-text-p3 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+/* ---- Social Media ---- */
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+/* --- Icon Part --- */
+
+.social-icon {
+  color: var(--body-color);
+  background: var(--p-color);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+/* Buttons*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  background: transparent;
+  font-size: var(--font-size-body);
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: 1px solid var(--border-color);
+  color: var(--p-color);
+  font-size: var(--font-size-body);
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--border-color);
+  color: var(--body-color);
+  cursor: pointer;
+  font-size: var(--font-size-body);
+}
+
+.btn-color-1:hover {
+  background: var(--border-color);
+  font-size: var(--font-size-body);
+}
+
+/*  About Section */
+
+
+/* Skills Section */
+
+
+/* Projects Section  */
+
+
+/* Contact Section  */
+
+
+/* CopyRight */
+
+.copyright {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: var(--font-size-body);
 }
 
 
-.portfolio-container {
-    display: flex;
+/* Scroll TOp  */
+
+
+/* !================== Media Queries ============== */
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 540px) {
+
+}
+
+@media screen and (max-width: 390px) {
 
 }

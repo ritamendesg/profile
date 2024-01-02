@@ -4,67 +4,90 @@
         <meta charset="UTF-8">
         <title>Rita Goncalves - Portfolio </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-            rel="stylesheet"
-            type='text/css'
-        >
+         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
-      />
-
-      <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- ------ RemixIcon ------- -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- ------ BoxIcon ------- -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
-      <div class="header text-center">
-        <li class="text-center">
-          <p>About me</p>
-          <p>Projects</p>
-          <p>Contact</p>
-        </li>
-      </div>
-  
-      <div class="container">
-        <div class="container-about-me text-center">
-          <img src="/images/rita-goncalves-profile-image.jpg" alt="" />
-          <h1 class="animate__animated animate__fadeInDown">Welcome</h1>
-            <!-- <a href="second_page.html" class="">About me</a> -->
+
+
+      <!-- ---------------- Header --------------- -->
+
+      <header class="header">
+        <a href="#" class="logo">RitaGoncalves<span></span></a>
+
+        <div class="nav-container">
+            <ul class="navbar">
+                <li class="nav-link active-link"><a href="#profile">Home</a></li>
+                <li class="nav-link"><a href="#about">About Me</a></li>
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#contact">Contact Me</a></li>
+            </ul>
+            
+            <div class="nav-button">
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+                <a href="#"><i class="bx bx-menu" id="menu-icon"></i></a>
+            </div>
         </div>
-      </div>
+        <div class="underline"></div>
 
-      <div class="footer text-center element-to-animate">
-        <ul>
-          <li class="list-inline text-center">
-            <a
-              href="https://www.linkedin.com/in/rita-mendes-goncalves/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i
-            ></a>
-          </li>
-  
-          <li class="list-inline text-center">
-            <a href="https://dribbble.com/ritamendesg" target="_blank">
-              <i class="fab fa-dribbble"></i
-            ></a>
-          </li>
+    </header>
 
-          <li class="list-inline text-center">
-            <a href="https://dribbble.com/ritamendesg" target="_blank">
-              <i class="fab fa-github"></i
-            ></a>
-          </li>
 
-        </ul>
-        <p class="copyright text-center">Copyright© 2023 Rita Mendes Goncalves</p>
-      </div>
-      <script src="script.js"></script>
-    </body>
+      <!-- ---------------- Profile Section --------------- -->
+
+      <section id="profile">
+        <div class="section-avatar">
+            <img src="Assets/images/rita-goncalves-profile-image.jpg" class="profile-pic">
+        </div>
+
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Rita Goncalves</h1>
+            <p class="section-text-p2">Front-End Developer</p>
+            <p class="section-text-p3">With knowledge in web development and design,</br>I offer the best projects resulting in quality work.</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('/assets/resume-example.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <a href="https://github.com/ritamendesg" target="_blank"><i class="ri-github-line social-icon"></i></a>
+                <a href="https://www.instagram.com/ritamendesg/" target="_blank"><i class="ri-instagram-line social-icon"></i></a>
+                <a href="https://dribbble.com/ritamendesg" target="_blank"><i class="ri-dribbble-fill social-icon"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+          <!-- ---------------- About Section --------------- -->
+          <section id="about">
+          </section>
+          <!-- ---------------- Skills Section --------------- -->
+          <section class="skills" id="skills">
+          </section>
+          <!-- ---------------- Project Section --------------- -->
+          <section id="projects">
+          </section>
+          <!-- ---------------- Contact Section --------------- -->
+          <section id="contact">
+          </section>
+          <!-- ---------------- CopyRight --------------- -->
+          <p class="copyright">&#169; Rita Goncalves. All right reserved</p>
+          <!-- ---------------- Scroll Up --------------- -->
+
+          <!-- ------ CDN FontAwesome ------- -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+          <!-- ------ JavaScript ------- -->
+          <script src="script.js"></script>
+      </body>
 </html>
