@@ -282,16 +282,34 @@ section {
 
 #skills {
   position: relative;
-
 }
+
 .skill-content {
   display: flex;
   justify-content: space-between;
 }
 
 .skill-text {
-    margin-bottom: 8rem;
-    font-size: 2.5rem;
+  margin-bottom: 8rem;
+  font-size: 2.5rem;
+}
+
+.row-img {
+  width: 95%;
+  height: 240px;
+  cursor: pointer;
+}
+
+.row-img img {
+  height: 50%;
+  display: block;
+  filter: brightness(70%);
+}
+
+.row-img img:hover {
+  filter: brightness(100%);
+  transform: scale(1.section-text-p1);
+  transition: all .5s ease;
 }
 
 /* Projects Section  */
