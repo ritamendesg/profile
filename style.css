@@ -314,6 +314,37 @@ section {
 
 /* Projects Section  */
 
+#projects {
+  position: relative;
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex:1;
+  background: var(--secondary-color);
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 0 1px var(--shadow-color);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+  filter: brightness(80%);
+}
+
+.project-title {
+  margin: 1rem;
+  color: var(--primary-color);
+}
 
 /* Contact Section  */
 
